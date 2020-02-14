@@ -1,17 +1,31 @@
 const elWrapper = document.getElementById("wrapper");
 const elBody = document.getElementsByTagName("body")[0];
+const COLORS = [
+  "#e21400",
+  "#91580f",
+  "#f8a700",
+  "#f78b00",
+  "#58dc00",
+  "#287b00",
+  "#a8f07a",
+  "#4ae8c4",
+  "#3b88eb",
+  "#3824aa",
+  "#a700ff",
+  "#d300e7"
+];
 
 let eventNode;
 let newDiv;
 
 const array = [];
-for (let i = 0; i < 12; i++) {
+for (let i = 0; i < 100; i++) {
   array.push(i + 1);
 }
 
 for (let i = 0; i < array.length; i++) {
   const div = document.createElement("div");
-  div.innerText = array[i];
+  div.style.backgroundColor = COLORS[i % COLORS.length];
   div.setAttribute("class", "content");
   div.setAttribute("id", "content" + (i + 1));
   div.setAttribute("draggable", "true");

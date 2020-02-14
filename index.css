@@ -10,15 +10,9 @@
   cursor: pointer;
   margin: 10px;
   border-radius: 10px;
-  border: 1px solid black;
   width: 100px;
   height: 100px;
   text-align: center;
-}
-
-.content:hover {
-  background-color: gray;
-  color: white;
 }
 
 .content:active {
