@@ -1,4 +1,5 @@
 const elWrapper = document.getElementById("wrapper");
+
 let eventNode;
 let newDiv;
 
