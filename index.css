@@ -24,11 +24,14 @@
 .content:active {
   color: white;
   background-color: black;
-  width: 120px;
-  height: 120px;
-}
-
-#move {
   width: 100px;
   height: 100px;
+}
+
+.moved {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
 }
