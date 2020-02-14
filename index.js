@@ -38,10 +38,8 @@ function dragEnd() {
 }
 
 function dragOver(e) {
-  // console.log(eventNode);
   if (e.target.id !== "wrapper") {
     const elDrag = document.getElementById(e.target.id);
-
     elDrag.before(eventNode);
   }
 }
